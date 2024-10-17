@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #4CAF50; /* Color principal */
+    --secondary-color: #008CBA; /* Color del botón */
+    --hover-color: #005f75; /* Color del botón al pasar el mouse */
+    --background-color: #f0f0f0; /* Color de fondo suave */
+    --header-text-color: white; /* Color del texto del encabezado */
+    --footer-background-color: #333; /* Color de fondo del pie de página */
+    --footer-text-color: white; /* Color del texto del pie de página */
+    --font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    color: var(--header-text-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible */
+    margin: 0; /* Eliminar el margen del encabezado */
+}
+
+#imgfime {
+    padding-right: 10px;
+}
+
+.header-buttons {
+    display: flex; /* Usar flexbox para los botones */
+}
+
+.header-buttons button {
+    background-color: transparent; /* Fondo transparente para los botones */
+    color: var(--header-text-color);
+    border: 1px solid var(--header-text-color); /* Borde del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    margin-left: 10px; /* Espaciado entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
+}
+
+.header-buttons button:hover {
+    background-color: var(--header-text-color); /* Cambia el color de fondo al pasar el mouse */
+    color: var(--primary-color); /* Cambia el color del texto al pasar el mouse */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imagenes/pexels-tara-winstead-7666406.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la página */
+    height: 70vh; /* Asegura que el fondo cubra toda la altura de la vista */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+#play-button {
+    background-color: var(--secondary-color);
+    color: var(--header-text-color);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#play-button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #play-button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #imgfime {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}

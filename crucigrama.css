@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+  }
+
+  #crucipistas {
+    display: flex;
+  }
+
+  #pistas {
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  #crucigrama {
+    margin-right: 200px;
+    margin-left: 20px;
+  }
+
+  #inicio-button {
+    background-color: rgb(9, 243, 9); /* Fondo transparente */
+    color: var(--link-color); /* Color del texto del enlace */
+    border: 2px solid var(--link-color); /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 14px; /* Tamaño de fuente */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la izquierda */
+    padding: 5px 10px; /* Espaciado interno reducido */
+    width: auto; /* Ancho automático para que el botón sea más pequeño */
+    transition: background-color 0.3s, color 0.3s; /* Efectos de transición */
+}
+
+#inicio-button:hover {
+    background-color: var(--link-color); /* Color de fondo al pasar el mouse */
+    color: blue; /* Cambiar color de texto al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crucigrama</title>
+  <link rel="stylesheet" href="crucigrama.css">
+</head>
+<body>
+    <button id="inicio-button" onclick="redirigirinicio()">Inicio</button> <!-- Botón Inicio -->
+  <h1>Crucigrama</h1>
+
+  <div id="crucipistas">
+    <table id="crucigrama">
+        <tr>
+          <td><input type="text" maxlength="1" data-letter="W"></td>
+          <td><input type="text" maxlength="1" data-letter="A"></td>
+          <td><input type="text" maxlength="1" data-letter="T"></td>
+          <td><input type="text" maxlength="1" data-letter="E"></td>
+          <td><input type="text" maxlength="1" data-letter="R"></td>
+          <td><input type="text" maxlength="1" data-letter="F"></td>
+          <td><input type="text" maxlength="1" data-letter="A"></td>
+          <td><input type="text" maxlength="1" data-letter="L"></td>
+          <td><input type="text" maxlength="1" data-letter="L"></td>
+        </tr>
+        <tr>
+          <td><input type="text" maxlength="1" data-letter="O"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="text" maxlength="1" data-letter="L"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="text" maxlength="1" data-letter="A"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    
+      <div id="pistas">
+        <h3>Horizontales</h3>
+        <p>
+            1. Permite organizar el trabajo en vertical, de arriba a abajo. Esto significa que se realiza una actividad por fases secuenciales y que no es posible pasar a la siguiente hasta que no se haya verificado la anterior. 
+        </p>
+        <p>
+            2. Parte de la base de lo que entenderíamos como un borrador si escribiéramos. El objetivo es realizar un prototipo de software rápido, sin reparar en los detalles.
+        </p>
+        <p>
+            3. Tiene en común con el de cascada el trabajo en fases, pero, a diferencia de este, cada fase supone añadir una funcionalidad. 
+        </p>
+        <p>
+            4. Cuenta con cuatro fases distintas y el objetivo es acercarse a lo que desea el cliente. Cuanto más nos acercamos al centro, más cerca estaremos de ello.
+        </p>
+        <p>
+            5. Es una técnica concebida para desarrollar un buen software en poco tiempo. La clave está en tener en cuenta diversos factores para las herramientas para desarrollo rápido de aplicaciones.
+        </p>
+      </div>
+  </div>
+
+  <button onclick="verificar()">Verificar</button>
+
+  <script src="crucigrama.js"></script>
+</body>
+</html>

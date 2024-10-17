@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #4CAF50; /* Color principal */
+    --secondary-color: #008CBA; /* Color del botón */
+    --hover-color: #005f75; /* Color del botón al pasar el mouse */
+    --background-color: #f0f0f0; /* Color de fondo suave */
+    --form-background-color: white; /* Color de fondo del formulario */
+    --text-color: #333; /* Color del texto */
+    --link-color: #007BFF; /* Color de los enlaces */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la vista */
+}
+
+.container {
+    background-color: var(--form-background-color);
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px; /* Espaciado interior */
+    width: 400px; /* Ancho del formulario */
+    position: relative; /* Necesario para posicionar el botón de cancelar */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    color: var(--text-color); /* Color del texto */
+}
+
+#logo-fime {
+    display: block; /* Asegura que el logo ocupe una línea completa */
+    margin: 0 auto 20px; /* Centra la imagen y añade un margen inferior */
+    width: auto; /* Permite que la imagen mantenga su tamaño original */
+    max-width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaciado entre grupos de formulario */
+}
+
+label {
+    display: block; /* Hacer que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espaciado inferior */
+    color: var(--text-color); /* Color del texto */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color); /* Cambiar color del borde al enfocar */
+    outline: none; /* Eliminar contorno predeterminado */
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    width: 100%; /* Ancho completo */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Efecto de transición */
+    margin-top: 10px; /* Espaciado superior para separar del campo anterior */
+}
+
+button:hover {
+    background-color: var(--hover-color); /* Cambiar color al pasar el mouse */
+}
+
+#cancel-button {
+    background-color: transparent; /* Fondo transparente */
+    color: var(--link-color); /* Color del texto del enlace */
+    border: 2px solid var(--link-color); /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 14px; /* Tamaño de fuente */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la izquierda */
+    padding: 5px 10px; /* Espaciado interno reducido */
+    width: auto; /* Ancho automático para que el botón sea más pequeño */
+    transition: background-color 0.3s, color 0.3s; /* Efectos de transición */
+}
+
+#cancel-button:hover {
+    background-color: var(--link-color); /* Color de fondo al pasar el mouse */
+    color: white; /* Cambiar color de texto al pasar el mouse */
+}
+
+.login-link {
+    text-align: center; /* Centrar texto del enlace de inicio de sesión */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.login-link a {
+    color: var(--link-color); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
